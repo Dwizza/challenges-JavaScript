@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display: flex; justify-content: center;align-items: center;flex-direction: column;">
+    <p style="font-size: 200px;">??</p>
+    <button style="padding: 5px 10px; border-radius: 5px;background-color: black;color: azure;">Incrementation</button>
+</body>
+</html>
+
+<script>
+
+    let counter = 0;
+    const button = document.querySelector('button');
+    
+    button.addEventListener('click', function() {
+        counter++;
+        document.querySelector('p').textContent = counter;
+    });
+</script>

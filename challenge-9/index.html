@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 500px;
+            background-color: coral;
+        }
+        button{
+            padding: 10px 30px;
+            background-color: blueviolet;
+        }
+        .gg{
+            height: 100px;
+            width: 500px;
+            background-color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="gg()">Go</button>
+    </div>
+</body>
+</html>
+
+<script>
+    let div = document.querySelector('div');
+    let button = document.querySelector('button');
+    function gg(){
+        div.classList.add('gg');
+    }
+</script>
